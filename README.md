@@ -5,20 +5,15 @@ A Python-based scientific calculator built with Tkinter, featuring a user-friend
 
 import tkinter as tk
 import math
-
 root = tk.Tk()
 root.title('Scientific Calculator')
 root.configure(bg='#0000FF')
 root.resizable(width=False, height=False)
-
 ent_field = tk.Entry(root, bg='#ADD8E6', fg='#000080',
                      font=('Arial', 25), borderwidth=10, justify="right")
 ent_field.grid(row=0, columnspan=10, padx=10, pady=10, sticky='nsew')
 ent_field.insert(0, '0')
-
 FONT = ("Arial", 10, 'bold')
-
-
 class SC_Calculator():
     def __init__(self):
         self.current = ''
